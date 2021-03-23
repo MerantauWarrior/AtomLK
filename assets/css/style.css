@@ -1,80 +1,138 @@
-/*regular checkbox*/
-.checkbox-checkmark{
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333333;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+*, *:after, *:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+main, header, footer, aside{
+    display: block;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100%;
+    background-color: #F5F7FF;
+}
+/*header*/
+/*sidebar*/
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: #fff;
+}
+.sidebar-logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 32px 0;
+    border-bottom: 2px solid #F5F7FF;
+}
+/*sidebar menu*/
+.sidebar-menu{
+    width: 240px;
+    margin: 49px 0;
+}
+.sidebar-menu__list-item{
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    background-color: #fff;
+}
+.sidebar-menu__list-item_active,
+.sidebar-menu__list-item:hover{
+    background-color: #F5F7FF;
+}
+.sidebar-menu__list-item:not(:last-child){
+    margin-bottom: 10px;
+}
+.sidebar-menu__link{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    border: 1px solid #1062AA;
+    height: 50px;
+    padding: 0 20px;
 }
-.checkbox-inp:checked + .checkbox-checkmark{
-    background-color: #1062AA;
+.sidebar-menu__link-icon{
+    width: 24px;
+    margin-right: 10px;
 }
-/*regular radio button*/
-.radio-checkmark{
+.sidebar-menu__link-text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1062AA;
+}
+.sidebar-menu__list-item_active .sidebar-menu__link-text{
+    color: #333333;
+}
+.sidebar-menu__link-arrow{
+    margin-left: auto;
+}
+/*sidebar socials*/
+.sidebar-socials{
+    width: 200px;
+    margin-top: auto;
+    margin-bottom: 50px;
+}
+.sidebar-socials__title{
+    margin-left: 3px;
+    margin-bottom: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+.sidebar-socials__items{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    border: 1px solid #1062AA;
+    justify-content: space-between;
 }
-.radio-inp:checked + .radio-checkmark:before{
-    content: '';
-    width: 12px;
-    height: 12px;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    background-color: #00ADEE;
+.sidebar-socials__item svg{
+    fill: #1062AA;
 }
-/*regular switch*/
-.switch-checkmark{
+.sidebar-socials__item:hover svg{
+    fill: #00ADEE;
+}
+/*content*/
+.inner{
     position: relative;
     display: flex;
-    width: 35px;
-    height: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    background-color: #EBF0FF;
-    -webkit-transition: all 0.25s;
-    -moz-transition: all 0.25s;
-    -ms-transition: all 0.25s;
-    -o-transition: all 0.25s;
-    transition: all 0.25s;
-    cursor: pointer;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1 0 auto;
+    min-height: 1px;
 }
-.switch-checkmark:before{
-    position: absolute;
-    content: '';
-    top: 1px;
-    left: 1px;
-    width: 18px;
-    height: 18px;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    background-color: #fff;
-    box-shadow: 1px 1px 1px rgba(16, 98, 170, 0.15);
-    -webkit-transition: all 0.25s;
-    -moz-transition: all 0.25s;
-    -ms-transition: all 0.25s;
-    -o-transition: all 0.25s;
-    transition: all 0.25s;
+.content{
+    flex: 1 0 auto;
+    min-height: 1px;
+    padding: 0 45px;
 }
-.switch-inp:checked + .switch-checkmark{
-    background-color: #00ADEE;
+/*footer*/
+.footer{
+    margin: 0 45px;
+    padding: 43px 0 47px 0;
+    border-top: 1px solid rgba(129, 133, 156, 0.3);
 }
-.switch-inp:checked + .switch-checkmark:before{
-    left: 16px;
-    box-shadow: 0 1px 1px rgba(16, 98, 170, 0.5);
+.footer-menu{
+    display: flex;
+    align-items: center;
+}
+.footer-menu__link{
+    margin-right: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
 }
