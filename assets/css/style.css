@@ -96,9 +96,11 @@ main, header, footer, aside{
 }
 .header-menu__hint-link{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     color: #00ADEE;
+}
+.header-menu__hint-link-icon{
+    margin-left: 7px;
 }
 /*sidebar*/
 .sidebar{
