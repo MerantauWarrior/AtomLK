@@ -24,9 +24,23 @@ main, header, footer, aside{
     min-height: 100%;
     background-color: #F5F7FF;
 }
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #1062AA;
+}
+::-webkit-scrollbar-thumb {
+    background: #FFE01B;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #00ADEE;
+}
 /*header*/
 .header{
-    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     background-color: #1062AA;
 }
 .header-menu{
@@ -36,21 +50,18 @@ main, header, footer, aside{
 .header-menu__item{
     position: relative;
 }
-.header-menu__item:not(:first-child){
-    margin: 0 12px;
-}
 .header-menu__link{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 119px;
-    height: 100px;
-    padding: 12px;
+    width: 100px;
+    height: 80px;
+    padding: 15px;
     background-color: #1062AA;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 17px;
     text-align: center;
     color: #EBF0FF;
     -webkit-transition: all 0.25s;
@@ -104,22 +115,33 @@ main, header, footer, aside{
 }
 /*sidebar*/
 .sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 300px;
     background-color: #fff;
+    z-index: 99;
 }
 .sidebar-logo{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 32px 50px;
+    height: 80px;
+    padding: 0 15px;
     border-bottom: 2px solid #F5F7FF;
 }
 /*sidebar menu*/
 .sidebar-menu{
     width: 240px;
-    margin: 49px 0;
+    height: calc(100% - 250px);
+    margin: 40px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .sidebar-menu__list-item{
     -webkit-border-radius: 12px;
@@ -193,13 +215,12 @@ main, header, footer, aside{
 }
 /*sidebar socials*/
 .sidebar-socials{
-    width: 200px;
+    width: 178px;
     margin-top: auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .sidebar-socials__title{
-    margin-left: 3px;
-    margin-bottom: 19px;
+    margin-bottom: 11px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -223,8 +244,8 @@ main, header, footer, aside{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    flex: 1 0 auto;
-    min-height: 1px;
+    width: 100%;
+    padding-left: 300px;
 }
 .content{
     flex: 1;
@@ -261,7 +282,7 @@ main, header, footer, aside{
 /*footer*/
 .footer{
     margin: 0 45px;
-    padding: 43px 0 47px 0;
+    padding: 24px 0 27px 0;
     border-top: 1px solid rgba(129, 133, 156, 0.3);
 }
 .footer-menu{
