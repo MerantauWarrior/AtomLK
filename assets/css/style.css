@@ -447,6 +447,7 @@ main, header, footer, aside{
 .breadcrumbs{
     display: flex;
     flex-wrap: wrap;
+    padding: 20px 0;
 }
 .breadcrumbs__item{
     position: relative;
