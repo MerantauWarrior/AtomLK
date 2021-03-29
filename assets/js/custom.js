@@ -12,5 +12,9 @@ $(document).ready(function () {
     $(this).toggleClass('header-lang__switch_active');
     $('.header-lang__select').fadeToggle(250);
   });
+  // notifications
+  $('.header-notifications__icon').click(function () {
+    $('.header-notifications__list').fadeToggle(250);
+  });
 
 });
