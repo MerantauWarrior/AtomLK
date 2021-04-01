@@ -10,7 +10,9 @@ input[type="radio"],
 input[type="file"]{
     display: none;
 }
+h1,h2,h3,h4,h5,h6,
 .h1,.h2,.h3,.h4,.h5,.h6{
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 h1,h2,h3,h4,h5,h6,p,pre{
@@ -45,12 +47,82 @@ a, svg, button{
     -o-transition: all 0.25s;
     transition: all 0.25s;
 }
-ul, ol{
+ul,
+ol{
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
+/*typography lists*/
+.typography ul > li,
+ol > li{
+    position: relative;
+    font-size: 14px;
+    line-height: 24px;
+}
+.typography ul > li{
+    padding-left: 12px;
+}
+.typography ul > li:before{
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: #1062AA;
+}
+/*buttons*/
+.btn-s, .btn-xs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+.btn-xs{
+    min-width: 86px;
+}
+.btn-s{
+    min-width: 134px;
+}
+.btn-orange{
+    background-color: #FFC145;
+    color: #333333;
+}
+.btn-orange:hover{
+    background-color: #FFE01B;
+    color: #333333;
+}
+.btn-blue{
+    background-color: #00ADEE;
+    color: #ffffff;
+}
+.btn-blue:hover{
+    background-color: #00ADEE;
+    color: #333333;
+}
+.btn-empty-blue{
+    color: #333333;
+    border: 1px solid #1062AA;
+}
+.btn-empty-blue:hover{
+    background-color: #1062AA;
+    color: #ffffff;
+}
+.btn-icon-right span{
+    margin-right: 7px;
+}
 /*regular checkbox*/
 .checkbox-checkmark{
     display: flex;
