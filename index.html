@@ -230,7 +230,7 @@
     <section class="header">
       <ul class="header-menu">
         <li class="header-menu__item">
-          <a href="#" class="header-menu__link">Home</a>
+          <a href="#" class="header-menu__link header-menu__link_active">Home</a>
         </li>
         <li class="header-menu__item">
           <a href="#" class="header-menu__link">SMS Sender</a>
@@ -317,42 +317,6 @@
           </div>
         </li>
       </ul>
-      <div class="header-finance">
-        <div class="header-finance__item">
-          <span class="header-finance__label">Shipping rate</span>
-          <a href="#" class="header-finance__link">
-            <span>Look</span>
-            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M11.1464 6.69309L0.957031 6.69309L0.957031 5.19309L11.1464 5.19309L7.65373 1.70045C7.36084 1.40756 7.36084 0.932686 7.65373 0.639792C7.94662 0.346899 8.4215 0.346899 8.71439 0.639792L13.4874 5.41276C13.7803 5.70566 13.7803 6.18053 13.4874 6.47342L8.71439 11.2464C8.4215 11.5393 7.94662 11.5393 7.65373 11.2464C7.36084 10.9535 7.36084 10.4786 7.65373 10.1857L11.1464 6.69309Z"
-                    fill="#00ADEE"/>
-            </svg>
-          </a>
-        </div>
-        <div class="header-finance__item">
-          <span class="header-finance__label">Balance:<span class="header-finance__value">$ 15.</span></span>
-          <a href="#" class="header-finance__link">
-            <span>Add funds</span>
-            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M11.1464 6.69309L0.957031 6.69309L0.957031 5.19309L11.1464 5.19309L7.65373 1.70045C7.36084 1.40756 7.36084 0.932686 7.65373 0.639792C7.94662 0.346899 8.4215 0.346899 8.71439 0.639792L13.4874 5.41276C13.7803 5.70566 13.7803 6.18053 13.4874 6.47342L8.71439 11.2464C8.4215 11.5393 7.94662 11.5393 7.65373 11.2464C7.36084 10.9535 7.36084 10.4786 7.65373 10.1857L11.1464 6.69309Z"
-                    fill="#00ADEE"/>
-            </svg>
-          </a>
-        </div>
-        <div class="header-finance__item">
-          <span class="header-finance__label">Bonus account<span class="header-finance__value">$ 155.</span></span>
-          <a href="#" class="header-finance__link">
-            <span>More detail</span>
-            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M11.1464 6.69309L0.957031 6.69309L0.957031 5.19309L11.1464 5.19309L7.65373 1.70045C7.36084 1.40756 7.36084 0.932686 7.65373 0.639792C7.94662 0.346899 8.4215 0.346899 8.71439 0.639792L13.4874 5.41276C13.7803 5.70566 13.7803 6.18053 13.4874 6.47342L8.71439 11.2464C8.4215 11.5393 7.94662 11.5393 7.65373 11.2464C7.36084 10.9535 7.36084 10.4786 7.65373 10.1857L11.1464 6.69309Z"
-                    fill="#00ADEE"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <a href="#" class="header-tickets">My tickets</a>
       <div class="header-notifications">
         <div class="header-notifications__icon">
           <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -409,12 +373,23 @@
       </div>
       <div class="header-user">
         <div class="header-user-profile">
-          <div class="header-user-profile__name">Sherlock<br> Holmes</div>
           <div class="header-user-profile__avatar"><img src="assets/img/general/header-user-avatar.jpg" alt="uname">
           </div>
         </div>
         <div class="header-user-menu">
           <div class="header-user-menu__items">
+            <div class="header-user-menu__item">
+              <a href="#" class="header-user-menu__link">My tickets</a>
+              <div class="header-user-menu__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 8L9.42229 7.21115C9.14458 7.07229 8.83835 7 8.52786 7H7.82843C7.29799 7 6.78929 7.21071 6.41421 7.58579L5.58579 8.41421C5.21071 8.78929 5 9.29799 5 9.82843L5 14.9296C5 15.5983 5.3342 16.2228 5.8906 16.5937L9.75746 19.1716C10.4944 19.663 11.4668 19.611 12.1472 19.044L17 15" stroke="#1062AA"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4549 12.9142C13.8515 12.1062 12.741 11.8739 11.8643 12.3721L10.009 13.4266C9.41298 13.7653 8.66412 13.6641 8.17937 13.1794V13.1794C7.54605 12.546 7.59324 11.5056 8.2813 10.9323L12.4437 7.46356C12.8032 7.16403 13.2562 7 13.7241 7H14.5279C14.8384 7 15.1446 7.07229 15.4223 7.21115L17.8944 8.44721C18.572 8.786 19 9.47852 19 10.2361L19 12.9796C19 14.9037 16.5489 15.718 15.3976 14.1764L14.4549 12.9142Z" stroke="#1062AA"/>
+                  <path d="M1 17V8" stroke="#1062AA" stroke-linecap="round"/>
+                  <path d="M1 17V8" stroke="#1062AA" stroke-linecap="round"/>
+                  <path d="M23 17V8" stroke="#1062AA" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
             <div class="header-user-menu__item">
               <a href="#" class="header-user-menu__link">Account Settings</a>
               <div class="header-user-menu__icon">

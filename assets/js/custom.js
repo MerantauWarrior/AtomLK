@@ -16,5 +16,9 @@ $(document).ready(function () {
   $('.header-notifications__icon').click(function () {
     $('.header-notifications__list').fadeToggle(250);
   });
+  // user menu
+  $('.header-user-profile__avatar').click(function () {
+    $('.header-user-menu').fadeToggle(250);
+  });
 
 });
