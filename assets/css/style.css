@@ -580,10 +580,8 @@ main, header, footer, aside{
     border-top-left-radius: 14px;
     z-index: 2;
 }
-.btn-support__icon{
-    margin-right: 7px;
-}
 .btn-support__text{
+    margin-left: 7px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -592,6 +590,16 @@ main, header, footer, aside{
 }
 
 @media all and (max-width: 1600px){
+    /*header*/
+    .header-notifications,
+    .header-lang,
+    .header-user{
+        margin-left: 15px;
+    }
+}
+
+
+@media all and (min-width: 320px) and (max-width: 767px){
     /*sidebar*/
     .sidebar{
         left: -100%;
@@ -608,11 +616,6 @@ main, header, footer, aside{
     /*header*/
     .header{
         justify-content: center;
-    }
-    .header-notifications,
-    .header-lang,
-    .header-user{
-        margin-left: 15px;
     }
     .header-menu, .header-user{
         height: auto;
@@ -632,5 +635,17 @@ main, header, footer, aside{
     }
     .content{
         padding: 0 15px;
+    }
+    /*btn support*/
+    .btn-support{
+        right: 15px;
+        bottom: 15px;
+        width: 50px;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+    }
+    .btn-support__text{
+        display: none;
     }
 }
