@@ -593,8 +593,12 @@ main, header, footer, aside{
     /*header*/
     .header-notifications,
     .header-lang,
+    .header-state,
     .header-user{
         margin-left: 15px;
+    }
+    .header-state{
+        padding: 15px;
     }
 }
 
