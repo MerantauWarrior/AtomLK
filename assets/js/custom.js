@@ -7,18 +7,23 @@ $(document).ready(function () {
     $(this).parent().toggleClass('sidebar-menu__list-item_active');
     $(this).siblings('.sidebar-submenu').toggle(250);
   });
-  // language
-  $('.header-lang__switch').click(function () {
-    $(this).toggleClass('header-lang__switch_active');
-    $('.header-lang__select').fadeToggle(250);
+  // dropdown
+  $('.js-dd').click(function (e) {
+    e.stopPropagation();
+    $('.js-dd').not($(this)).removeClass('active');
+    $('.js-dd').not($(this)).siblings('.js-dd-content').fadeOut(250);
+    $(this).toggleClass('active');
+    $(this).siblings('.js-dd-content').fadeToggle(250);
   });
-  // notifications
-  $('.header-notifications__icon').click(function () {
-    $('.header-notifications__list').fadeToggle(250);
-  });
-  // user menu
-  $('.header-user-profile__avatar').click(function () {
-    $('.header-user-menu').fadeToggle(250);
-  });
+  $('.js-dd-content').click(function (e) {
+    e.stopPropagation();
+  })
+  $(document).click(function (e) {
+    e.stopPropagation();
+    var container = $('.js-dd-content, .js-dd');
+    if (container.has(e.target).length === 0) {
+      $('.js-dd-content').fadeOut(250);
+    }
+  })
 
 });

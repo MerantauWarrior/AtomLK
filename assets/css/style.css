@@ -224,7 +224,7 @@ main, header, footer, aside{
     color: #333333;
 }
 .header-notifications__list{
-    display: none;
+    /*display: none;*/
     position: absolute;
     top: 100%;
     right: 0;
@@ -280,7 +280,7 @@ main, header, footer, aside{
     -o-transition: all 0.25s;
     transition: all 0.25s;
 }
-.header-lang__switch_active .header-lang__switch-arrow{
+.active .header-lang__switch-arrow{
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -288,7 +288,7 @@ main, header, footer, aside{
     transform: rotate(180deg);
 }
 .header-lang__select{
-    display: none;
+    /*display: none;*/
     position: absolute;
     top: 100%;
     right: 0;
@@ -343,7 +343,7 @@ main, header, footer, aside{
     border-radius: 100%;
 }
 .header-user-menu{
-    display: none;
+    /*display: none;*/
     position: absolute;
     top: 100%;
     right: -32px;
