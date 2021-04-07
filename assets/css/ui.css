@@ -13,10 +13,40 @@ input[type="file"]{
 h1,h2,h3,h4,h5,h6,
 .h1,.h2,.h3,.h4,.h5,.h6{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
 }
 h1,h2,h3,h4,h5,h6,p,pre{
     margin: 0;
+}
+h1{
+    font-size: 30px;
+    line-height: 46px;
+}
+h2{
+    font-size: 26px;
+    line-height: 40px;
+}
+h3{
+    font-size: 22px;
+    line-height: 28px;
+}
+h4{
+    font-size: 18px;
+    line-height: 28px;
+}
+h5{
+    font-size: 16px;
+    line-height: 26px;
+}
+h6{
+    font-size: 14px;
+    line-height: 24px;
+}
+.fw-m{
+    font-weight: 500;
+}
+p{
+    font-size: 16px;
+    line-height: 24px;
 }
 button, input, textarea, select{
     padding: 0;
@@ -55,7 +85,7 @@ ol{
 }
 /*typography lists*/
 .typography ul > li,
-ol > li{
+.typography ol > li{
     position: relative;
     font-size: 14px;
     line-height: 24px;
@@ -63,17 +93,47 @@ ol > li{
 .typography ul > li{
     padding-left: 12px;
 }
-.typography ul > li:before{
+.typography ul > li:before,
+.typography ol > li:before{
     content: "";
     position: absolute;
-    top: 9px;
     left: 0;
-    width: 5px;
-    height: 5px;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
+}
+.typography ul > li:before{
+    top: 9px;
+    width: 5px;
+    height: 5px;
     background-color: #1062AA;
+}
+.typography li:not(:last-child){
+    margin-bottom: 8px;
+}
+.typography ol{
+    counter-reset: my-counter;
+}
+.typography ol > li{
+    padding-left: 32px;
+    counter-increment: my-counter;
+}
+.typography ol > li:before{
+    content: counter(my-counter);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #1062AA;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #1062AA;
+}
+.typography li > ul,
+.typography li > ol{
+    margin-top: 8px;
 }
 /*buttons*/
 .btn-s, .btn-xs{
@@ -206,4 +266,23 @@ ol > li{
 /*js dd*/
 .js-dd-content{
     display: none;
+}
+/*link with arrow*/
+.link-w-arrow{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: #00ADEE;
+}
+.link-w-arrow svg{
+    margin-left: 7px;
+    fill: #00ADEE;
+}
+.link-w-arrow:hover{
+    color: #1062AA;
+}
+.link-w-arrow:hover svg{
+    fill: #1062AA;
 }
