@@ -108,8 +108,8 @@ ol{
     height: 5px;
     background-color: #1062AA;
 }
-.typography li:not(:last-child){
-    margin-bottom: 8px;
+.typography li{
+    margin: 8px 0;
 }
 .typography ol{
     counter-reset: my-counter;
