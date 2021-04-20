@@ -1,6 +1,9 @@
 .container--verifier{
     max-width: 870px;
 }
+.verifier .btn{
+    padding: 0 20px;
+}
 .verifier-cards{
     display: flex;
     flex-wrap: wrap;
