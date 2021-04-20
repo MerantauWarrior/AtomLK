@@ -5,14 +5,14 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home 2</title>
+  <title>Verifier</title>
   <meta name="description" content="some text">
   <meta name="keywords" content="some, text">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/ui.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/verifier.css">
 </head>
 <body>
 <div class="wrapper">
@@ -57,6 +57,7 @@
               </svg>
             </span>
             <span class="sidebar-menu__link-text">Buy</span>
+            <span class="sidebar-menu__link-label">soon</span>
           </a>
         </li>
         <li class="sidebar-menu__list-item">
@@ -262,7 +263,7 @@
           </div>
         </li>
         <li class="header-menu__item">
-          <a href="#" class="header-menu__link">Email Verifier</a>
+          <a href="#" class="header-menu__link header-menu__link_active">Email Verifier</a>
           <div class="header-menu__hint">
             <div class="header-menu__hint-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -378,12 +379,8 @@
               <a href="#" class="header-user-menu__link">My tickets</a>
               <div class="header-user-menu__icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                      d="M11 8L9.42229 7.21115C9.14458 7.07229 8.83835 7 8.52786 7H7.82843C7.29799 7 6.78929 7.21071 6.41421 7.58579L5.58579 8.41421C5.21071 8.78929 5 9.29799 5 9.82843L5 14.9296C5 15.5983 5.3342 16.2228 5.8906 16.5937L9.75746 19.1716C10.4944 19.663 11.4668 19.611 12.1472 19.044L17 15"
-                      stroke="#1062AA"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M14.4549 12.9142C13.8515 12.1062 12.741 11.8739 11.8643 12.3721L10.009 13.4266C9.41298 13.7653 8.66412 13.6641 8.17937 13.1794V13.1794C7.54605 12.546 7.59324 11.5056 8.2813 10.9323L12.4437 7.46356C12.8032 7.16403 13.2562 7 13.7241 7H14.5279C14.8384 7 15.1446 7.07229 15.4223 7.21115L17.8944 8.44721C18.572 8.786 19 9.47852 19 10.2361L19 12.9796C19 14.9037 16.5489 15.718 15.3976 14.1764L14.4549 12.9142Z"
-                        stroke="#1062AA"/>
+                  <path d="M11 8L9.42229 7.21115C9.14458 7.07229 8.83835 7 8.52786 7H7.82843C7.29799 7 6.78929 7.21071 6.41421 7.58579L5.58579 8.41421C5.21071 8.78929 5 9.29799 5 9.82843L5 14.9296C5 15.5983 5.3342 16.2228 5.8906 16.5937L9.75746 19.1716C10.4944 19.663 11.4668 19.611 12.1472 19.044L17 15" stroke="#1062AA"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4549 12.9142C13.8515 12.1062 12.741 11.8739 11.8643 12.3721L10.009 13.4266C9.41298 13.7653 8.66412 13.6641 8.17937 13.1794V13.1794C7.54605 12.546 7.59324 11.5056 8.2813 10.9323L12.4437 7.46356C12.8032 7.16403 13.2562 7 13.7241 7H14.5279C14.8384 7 15.1446 7.07229 15.4223 7.21115L17.8944 8.44721C18.572 8.786 19 9.47852 19 10.2361L19 12.9796C19 14.9037 16.5489 15.718 15.3976 14.1764L14.4549 12.9142Z" stroke="#1062AA"/>
                   <path d="M1 17V8" stroke="#1062AA" stroke-linecap="round"/>
                   <path d="M1 17V8" stroke="#1062AA" stroke-linecap="round"/>
                   <path d="M23 17V8" stroke="#1062AA" stroke-linecap="round"/>
@@ -435,143 +432,108 @@
     <section class="content">
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">My atompark</a></li>
-        <li class="breadcrumbs__item"><span class="breadcrumbs__current">Member area</span></li>
+        <li class="breadcrumbs__item"><span class="breadcrumbs__current">Verifier Online</span></li>
       </ul>
-      <div class="container">
+      <div class="container container--verifier">
 
-        <div class="home typography">
-          <h1>Hi, Jones</h1>
-          <p class="home__welcome">Welcome to your Member Area. Here you can:</p>
-          <ul class="home__list-h">
-            <li><a href="#">use email and sms services</a></li>
-            <li><a href="#">get license keys for the purchased software</a></li>
-            <li><a href="#">view your order history</a></li>
-          </ul>
-          <div class="home__c-o-s">
-            <div class="home__c-o">
-              <div class="home__controls">
-                <a href="#" class="btn btn-s btn-blue home__control">My subscribtion</a>
-                <a href="#" class="btn btn-s btn-blue home__control">Account settings</a>
-                <a href="#" class="btn btn-s btn-blue home__control">Technical suport</a>
-              </div>
-              <div class="home-orders box">
-                <h3 class="home-orders__title">My orders and registration keys</h3>
-                <div class="home-orders__info">
-                  Ordered products: Atomic Mail Sender, Аtomic Email Studio
+        <div class="verifier">
+          <h1>Welcome to Atomic Prospect Service</h1>
+          <div class="verifier-cards">
+            <div class="verifier-card">
+              <div class="verifier-card__top">
+                <div class="verifier-card__top-l">
+                  <div class="verifier-card__label">pro</div>
+                  <div class="verifier-card__title">Improve your deliverability</div>
                 </div>
-                <div class="home-btns">
-                  <a href="#" class="btn btn-s btn-orange home-btn">Buy other products</a>
-                  <a href="#" class="btn btn-xs btn-empty-blue home-btn">My keys</a>
-                  <a href="#" class="home-btn home-btn-blank">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M3.80801 3.99999H14.1958L13.2065 9.99999H4.79732L3.80801 3.99999Z" stroke=""
-                            stroke-linecap="round" stroke-linejoin="round"/>
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M6.00065 13.3333C6.36884 13.3333 6.66732 13.0349 6.66732 12.6667C6.66732 12.2985 6.36884 12 6.00065 12C5.63246 12 5.33398 12.2985 5.33398 12.6667C5.33398 13.0349 5.63246 13.3333 6.00065 13.3333Z"
-                            stroke=""/>
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M12.0007 13.3333C12.3688 13.3333 12.6673 13.0349 12.6673 12.6667C12.6673 12.2985 12.3688 12 12.0007 12C11.6325 12 11.334 12.2985 11.334 12.6667C11.334 13.0349 11.6325 13.3333 12.0007 13.3333Z"
-                            stroke=""/>
-                      <path d="M4.66667 3.99999H2" stroke="" stroke-linecap="round"/>
-                    </svg>
-                    <span>Order history</span>
-                  </a>
+                <div class="verifier-card__top-r">
+                  <img src="assets/img/verifier/v-card-1.svg" alt="text">
+                </div>
+              </div>
+              <div class="verifier-card__content">
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</div>
+                <div class="verifier-card__btn">
+                  <a href="#" class="btn btn-orange">Create campaign</a>
                 </div>
               </div>
             </div>
-            <div class="home-support box">
-              <div class="home-support__inner">
-                <div class="home-support__text-s">Technical support phone numbers:</div>
-                <a href="tel:0 (800) 21 01 91" class="home-support__tel">
-                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M21 13H19C17.8954 13 17 13.8954 17 15V17C17 18.1046 17.8954 19 19 19V19C20.1046 19 21 18.1046 21 17V13C21 8.02944 16.9706 4 12 4C7.02944 4 3 8.02944 3 13V17C3 18.1046 3.89543 19 5 19V19C6.10457 19 7 18.1046 7 17V15C7 13.8954 6.10457 13 5 13H3"
-                        stroke="#1062AA"/>
-                    <path d="M21 15V19C21 19 21 22 19 22C17 22 14 22 14 22" stroke="#1062AA" stroke-linejoin="round"/>
-                  </svg>
-                  <span>0 (800) 21 01 91</span>
-                </a>
-                <div class="home-support__text-s">Сontact the accounting department:</div>
-                <a href="mailto:a.lazareva@atompark.com" class="home-support__mail">a.lazareva@atompark.com</a>
-                <a href="#" class="btn btn-s btn-orange home-support__btn">Chat with us 24/7</a>
-              </div>
-            </div>
-          </div>
-          <div class="home-services">
-            <h3 class="home-services__title">My services</h3>
-            <div class="home-services-item box">
-              <div class="home-services-item__header">
-                <div class="home-services-item__title">
-                  <img src="assets/img/home/home__slider-SmsSender.svg" alt="sender"
-                       class="home-services-item__title-icon">
-                  <span>Atomic SMS Sender</span>&nbsp;- bulk mailing service
+            <div class="verifier-card">
+              <div class="verifier-card__top">
+                <div class="verifier-card__top-l">
+                  <div class="verifier-card__title">Check single email</div>
                 </div>
-                <div class="home-warning">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 8V13" stroke="#ED654C" stroke-linecap="round"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M12 17C12.5523 17 13 16.5523 13 16C13 15.4477 12.5523 15 12 15C11.4477 15 11 15.4477 11 16C11 16.5523 11.4477 17 12 17Z"
-                          fill="#ED654C"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                          stroke="#ED654C"/>
-                  </svg>
-                  <span>Not active</span>
+                <div class="verifier-card__top-r">
+                  <img src="assets/img/verifier/v-card-2.svg" alt="text">
                 </div>
               </div>
-              <div class="home-services-item__body">
-                <p class="home-services-item__description">Web-based service to send sms messages to a group of
-                  recipients at a time. You can personalize each
-                  sms message, plan a sending date beforehand and track the delivery results.</p>
-                <div class="home-btns">
-                  <a href="#" class="btn btn-s btn-orange home-btn">Activate</a>
-                  <a href="#" class="home-btn home-btn-blank">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M8.00065 14.6667C11.6825 14.6667 14.6673 11.6819 14.6673 8.00004C14.6673 4.31814 11.6825 1.33337 8.00065 1.33337C4.31875 1.33337 1.33398 4.31814 1.33398 8.00004C1.33398 11.6819 4.31875 14.6667 8.00065 14.6667Z"
-                            stroke=""/>
-                      <path d="M8 1.33337V8.00004M8 14.6667V8.00004M8 8.00004H14.6667" stroke=""/>
-                    </svg>
-                    <span>Reports</span>
-                  </a>
-                  <a href="#" class="home-btn home-btn-blank">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8 4V5" stroke="" stroke-linecap="round"/>
-                      <path d="M8 11V12" stroke="" stroke-linecap="round"/>
-                      <path
-                          d="M9.75 6C9.75 6 9.5 5 8 5C6.5 5 6.25 5.97826 6.25 6.5C6.25 8.57016 9.75 7.48247 9.75 9.5C9.75 10.0217 9.5 11 8 11C6.5 11 6.25 10 6.25 10"
-                          stroke="" stroke-linecap="round"/>
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M8.00065 14.6667C11.6825 14.6667 14.6673 11.6819 14.6673 8.00004C14.6673 4.31814 11.6825 1.33337 8.00065 1.33337C4.31875 1.33337 1.33398 4.31814 1.33398 8.00004C1.33398 11.6819 4.31875 14.6667 8.00065 14.6667Z"
-                            stroke=""/>
-                    </svg>
-                    <span>Pricing</span>
-                  </a>
+              <div class="verifier-card__content">
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</div>
+                <div class="verifier-card__btn">
+                  <a href="#" class="btn btn-orange">Validate</a>
                 </div>
               </div>
             </div>
-            <div class="home-services-item box">
-              <div class="home-services-item__header">
-                <div class="home-services-item__title">
-                  <img src="assets/img/home/home__slider-STUDIO.svg" alt="studio"
-                       class="home-services-item__title-icon">
-                  <span>Atomic Email Studio</span>&nbsp;- a comprehensive solution for warming up leads
+            <div class="verifier-card">
+              <div class="verifier-card__top">
+                <div class="verifier-card__top-l">
+                  <div class="verifier-card__title">Your tariff</div>
+                </div>
+                <div class="verifier-card__top-r">
+                  <img src="assets/img/verifier/v-card-3.svg" alt="text">
                 </div>
               </div>
-              <div class="home-services-item__body">
-                <p class="home-services-item__description">This program will perfectly suit the needs of small
-                  businesses, agencies and coachers to get in tougch with their potential clients.</p>
-                <div class="home-btns">
-                  <a href="#" class="btn btn-s btn-orange home-btn">Buy for $ 73 </a>
-                  <a href="#" class="btn btn-s btn-empty-blue home-btn btn-icon-right">
-                    <span>Free download</span>
-                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M4.77297 10.1893V0H6.27297V10.1893L9.76561 6.6967C10.0585 6.40381 10.5334 6.40381 10.8263 6.6967C11.1192 6.98959 11.1192 7.46447 10.8263 7.75736L6.0533 12.5303C5.76041 12.8232 5.28553 12.8232 4.99264 12.5303L0.21967 7.75736C-0.0732234 7.46447 -0.0732234 6.98959 0.21967 6.6967C0.512563 6.40381 0.987437 6.40381 1.28033 6.6967L4.77297 10.1893Z"
-                            fill="#333333"/>
-                    </svg>
-                  </a>
+              <div class="verifier-card__content">
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</div>
+                <div class="verifier-card__btn">
+                  <a href="#" class="btn btn-orange">Add credits</a>
+                </div>
+              </div>
+            </div>
+            <div class="verifier-card verifier-card--inactive">
+              <div class="verifier-card__top">
+                <div class="verifier-card__top-l">
+                  <div class="verifier-card__title">Automate list validation in your ESP</div>
+                </div>
+                <div class="verifier-card__top-r">
+                  <img src="assets/img/verifier/v-card-4.svg" alt="text">
+                </div>
+              </div>
+              <div class="verifier-card__content">
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</div>
+                <div class="verifier-card__btn">
+                  <a href="#" class="btn btn-empty-gray">See available integration</a>
+                </div>
+              </div>
+            </div>
+            <div class="verifier-card verifier-card--inactive">
+              <div class="verifier-card__top">
+                <div class="verifier-card__top-l">
+                  <div class="verifier-card__title">Exclude<br> non-existent emails</div>
+                </div>
+                <div class="verifier-card__top-r">
+                  <img src="assets/img/verifier/v-card-5.svg" alt="text">
+                </div>
+              </div>
+              <div class="verifier-card__content">
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</div>
+                <div class="verifier-card__btn">
+                  <a href="#" class="btn btn-empty-gray">Set up widget</a>
+                </div>
+              </div>
+            </div>
+            <div class="verifier-card">
+              <div class="verifier-card__top">
+                <div class="verifier-card__top-l">
+                  <div class="verifier-card__label">sale</div>
+                  <div class="verifier-card__title">Suggest an idea</div>
+                </div>
+                <div class="verifier-card__top-r">
+                  <img src="assets/img/verifier/v-card-6.svg" alt="text">
+                </div>
+              </div>
+              <div class="verifier-card__content">
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</div>
+                <div class="verifier-card__btn">
+                  <a href="#" class="btn btn-empty-blue">Suggest</a>
                 </div>
               </div>
             </div>

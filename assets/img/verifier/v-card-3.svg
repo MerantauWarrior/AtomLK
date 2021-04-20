@@ -1,0 +1,16 @@
+<svg width="84" height="73" viewBox="0 0 84 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="35.2507" height="60.1865" rx="6" transform="matrix(0.866862 0.498548 -0.865186 0.501451 52.7373 25.2383)" fill="#1044AA" fill-opacity="0.7"/>
+<circle r="1.12616" transform="matrix(0.866862 0.498548 -0.865186 0.501451 32.4155 52.0016)" fill="#1062AA"/>
+<circle r="1.12616" transform="matrix(0.866862 0.498548 -0.865186 0.501451 27.8989 54.6193)" fill="#1062AA"/>
+<rect x="-8.9407e-08" y="1.5" width="32.2507" height="57.1865" rx="4.5" transform="matrix(0.866025 0.5 -0.866025 0.5 54.0759 14.0005)" fill="white" stroke="#EBF0FF" stroke-width="3"/>
+<rect x="-4.47035e-08" y="0.75" width="33.7507" height="58.6865" rx="5.25" transform="matrix(0.866025 0.5 -0.866025 0.5 53.4259 0.513184)" stroke="#1062AA" stroke-width="1.5"/>
+<rect x="-2.98023e-08" y="0.5" width="16.3683" height="4.46803" rx="2.23401" transform="matrix(0.866025 0.5 -0.866025 0.5 21.5951 27.3433)" stroke="#1062AA"/>
+<path d="M59.9251 13.6369L58.859 14.2524" stroke="#1062AA" stroke-linecap="round"/>
+<path d="M52.4623 17.9455L51.3961 18.561" stroke="#1062AA" stroke-linecap="round"/>
+<path d="M59.6584 15.9451C59.6584 15.9451 60.458 15.1757 58.8588 14.2524C57.2597 13.3292 55.9502 13.7774 55.394 14.0986C53.187 15.3728 58.078 16.8576 55.9271 18.0994C55.3708 18.4206 54.0614 18.8688 52.4622 17.9455C50.8631 17.0223 51.6626 16.2529 51.6626 16.2529" stroke="#1062AA" stroke-linecap="round"/>
+<path d="M31.5264 25.2246L43.0041 31.8513" stroke="#81859C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35.8848 22.709L47.3625 29.3356" stroke="#81859C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36.6777 18.1362L51.7191 26.8204" stroke="#81859C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle r="1.12616" transform="matrix(0.866025 0.5 -0.866025 0.5 32.4102 20.6652)" fill="#1062AA"/>
+<circle r="1.12616" transform="matrix(0.866025 0.5 -0.866025 0.5 27.8877 23.2746)" fill="#1062AA"/>
+</svg>

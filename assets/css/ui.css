@@ -136,8 +136,9 @@ ol{
     margin-top: 8px;
 }
 /*buttons*/
-.btn-s, .btn-xs{
-    display: flex;
+.btn{
+    /*display: flex;*/
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 0 10px;
@@ -178,6 +179,14 @@ ol{
 }
 .btn-empty-blue:hover{
     background-color: #1062AA;
+    color: #ffffff;
+}
+.btn-empty-gray{
+    color: #81859C;
+    border: 1px solid #81859C;
+}
+.btn-empty-gray:hover{
+    background-color: #81859C;
     color: #ffffff;
 }
 .btn-icon-right span{
