@@ -1,6 +1,18 @@
 $(document).ready(function () {
   console.log("ready");
 
+  // mob menu
+  $('.header-open-mob').click(function () {
+    $('.sidebar').addClass('sidebar_opened');
+    $('body').addClass('ovh');
+  });
+  $('.sidebar-mob-close').click(function () {
+    $('.sidebar').removeClass('sidebar_opened');
+    $('body').removeClass('ovh');
+  });
+  $('.header-mob-info').click(function () {
+    $('.header-state').toggleClass('header-state_opened');
+  });
   // sidebar menu
   $('.js-sb-dd').click(function (e) {
     e.preventDefault();
