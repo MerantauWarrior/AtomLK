@@ -819,13 +819,20 @@ main, header, footer, aside{
 }
 
 
-@media all and (min-width: 768px) and (max-width: 1600px){
+@media all and (min-width: 1200px) and (max-width: 1600px){
     /*header*/
     .header-notifications,
     .header-lang,
     .header-state,
     .header-user{
         margin-left: 15px;
+    }
+    .header-user{
+        margin-right: 15px;
+    }
+    .header-user-menu{
+        right: -15px;
+        padding: 0 15px;
     }
     .header-state{
         padding: 15px;
@@ -868,8 +875,8 @@ main, header, footer, aside{
         padding: 10px 15px;
     }
     .header-menu__link:not(:hover, .header-menu__link_active){
-        /*background-color: #00ADEE;*/
-        background-color: #009688;
+        background-color: #00ADEE;
+        /*background-color: #009688;*/
     }
     .header-menu__hint{
         display: none;
