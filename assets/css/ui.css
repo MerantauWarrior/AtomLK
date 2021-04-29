@@ -151,6 +151,9 @@ ol{
     -moz-border-radius: 6px;
     border-radius: 6px;
 }
+.btn:hover{
+    cursor: pointer;
+}
 .btn-xs{
     min-width: 86px;
 }
@@ -173,6 +176,14 @@ ol{
     background-color: #00ADEE;
     color: #333333;
 }
+.btn-dark-blue{
+    background-color: #1062AA;
+    color: #ffffff;
+}
+.btn-dark-blue:hover{
+    background-color: #1062AA;
+    color: #ffffff;
+}
 .btn-empty-blue{
     color: #333333;
     border: 1px solid #1062AA;
@@ -191,6 +202,39 @@ ol{
 }
 .btn-icon-right span{
     margin-right: 7px;
+}
+/*regular input-label*/
+.label{
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.inp{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 11px 20px;
+    border: 1px solid #81859C;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+}
+.inp::-webkit-input-placeholder {
+    color: #81859C;
+}
+.inp::-moz-placeholder {
+    color: #81859C;
+}
+.inp:-ms-input-placeholder {
+    color: #81859C;
+}
+.inp:-moz-placeholder {
+    color: #81859C;
 }
 /*regular checkbox*/
 .checkbox-checkmark{
@@ -294,4 +338,55 @@ ol{
 }
 .link-w-arrow:hover svg{
     fill: #1062AA;
+}
+/*tooltip*/
+.tooltip{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #00ADEE;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #00ADEE;
+    cursor: help;
+}
+.tooltip-box{
+    display: none;
+    position: absolute;
+    width: 136px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: left;
+    color: #81859C;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(16, 98, 170, 0.2);
+}
+.tooltip-box--right{
+    top: 100%;
+    right: 0;
+    margin-top: 4px;
+    border-radius: 6px 0 6px 6px;
+}
+.tooltip-box:after{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+}
+.tooltip:hover .tooltip-box{
+    display: block;
 }
