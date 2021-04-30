@@ -83,6 +83,10 @@ ol{
     padding: 0;
     list-style: none;
 }
+/*colors*/
+.c-cyan{
+    color: #00ADEE;
+}
 /*typography lists*/
 .typography ul > li,
 .typography ol > li{
@@ -198,6 +202,14 @@ ol{
 }
 .btn-empty-gray:hover{
     background-color: #81859C;
+    color: #ffffff;
+}
+.btn-empty-red{
+    color: #333333;
+    border: 1px solid #ED654C;
+}
+.btn-empty-red:hover{
+    background-color: #ED654C;
     color: #ffffff;
 }
 .btn-icon-right span{
@@ -389,4 +401,36 @@ ol{
 }
 .tooltip:hover .tooltip-box{
     display: block;
+}
+/*modal*/
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 99;
+}
+.modal-window{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    border: 1px solid #1062AA;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.modal-window__close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
 }

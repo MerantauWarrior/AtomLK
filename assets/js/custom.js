@@ -20,24 +20,26 @@ $(document).ready(function () {
     $(this).siblings('.sidebar-submenu').toggle(250);
   });
   // dropdown
-  $('.js-dd').click(function (e) {
-    e.stopPropagation();
-    $('.js-dd').not($(this)).removeClass('active');
-    $('.js-dd').not($(this)).siblings('.js-dd-content').fadeOut(250);
-    $(this).toggleClass('active');
-    $(this).siblings('.js-dd-content').fadeToggle(250);
-  });
-  $('.js-dd-content').click(function (e) {
-    e.stopPropagation();
-  })
-  $(document).click(function (e) {
-    e.stopPropagation();
-    var container = $('.js-dd-content, .js-dd');
-    if (container.has(e.target).length === 0) {
-      $('.js-dd').removeClass('active');
-      $('.js-dd-content').fadeOut(250);
-    }
-  })
+  if ($('.js-dd').length > 0) {
+    $('.js-dd').click(function (e) {
+      e.stopPropagation();
+      $('.js-dd').not($(this)).removeClass('active');
+      $('.js-dd').not($(this)).siblings('.js-dd-content').fadeOut(250);
+      $(this).toggleClass('active');
+      $(this).siblings('.js-dd-content').fadeToggle(250);
+    });
+    $('.js-dd-content').click(function (e) {
+      e.stopPropagation();
+    })
+    $(document).click(function (e) {
+      e.stopPropagation();
+      var container = $('.js-dd-content, .js-dd');
+      if (container.has(e.target).length === 0) {
+        $('.js-dd').removeClass('active');
+        $('.js-dd-content').fadeOut(250);
+      }
+    })
+  }
   // accordion
   if ($('.accordion').length > 0) {
     $('.js-acc-toggle').click(function () {
@@ -49,6 +51,19 @@ $(document).ready(function () {
     $('.accordion-item__head').click(function () {
       $(this).toggleClass('accordion-item__head_opened');
       $(this).siblings('.accordion-item__body').slideToggle(250);
+    });
+  }
+  // modal
+  if ($('.modal').length > 0) {
+    $('.modal-window__close').click(function () {
+      $('.modal').hide();
+      $('.modal-window').hide();
+    });
+    $(document).click(function (e) {
+      if (e.target == $('.modal')[0]) {
+        $('.modal').hide();
+        $('.modal-window').hide();
+      }
     });
   }
   // alerts

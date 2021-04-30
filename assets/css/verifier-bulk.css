@@ -349,6 +349,62 @@
 .verifier-bulk__pagination-list-link_active{
     color: #333333;
 }
+.verifier-bulk__controls-result-p{
+    margin-top: 25px;
+}
+.verifier-bulk__controls-result-p .verifier-bulk-search__inp{
+    width: 100%;
+}
+.verifier-bulk__controls-result-p .verifier-bulk-search__inp .inp{
+    padding-left: 20px;
+    padding-right: 50px;
+}
+.verifier-bulk__controls-result-p .verifier-bulk-search__btn{
+    left: auto;
+    right: 18px;
+}
+.verifier-bulk__nothing{
+    margin-top: 21px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #81859C;
+}
+
+.verifier-bulk-modal-window{
+    width: 100%;
+    max-width: 350px;
+    padding: 32px 54px 36px 54px;
+}
+.verifier-bulk-modal-window__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.verifier-bulk-modal-window__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #F5F7FF;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.verifier-bulk-modal-window__text{
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+.verifier-bulk-modal-window__btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
 
 @media all and (min-width: 320px) and (max-width: 767px){
     .verifier-bulk-card__list-statistic{
