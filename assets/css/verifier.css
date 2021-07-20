@@ -30,8 +30,10 @@
     justify-content: space-between;
     min-height: 130px;
     padding: 20px 26px 24px 26px;
-    background: -o-linear-gradient(145.27deg, #FF416F 0%, rgba(0, 114, 215, 0) 98.48%), #35C8CB;
-    background: linear-gradient(304.73deg, #FF416F 0%, rgba(0, 114, 215, 0) 98.48%), #35C8CB;
+    /*background: -o-linear-gradient(145.27deg, #FF416F 0%, rgba(0, 114, 215, 0) 98.48%), #35C8CB;*/
+    /*background: linear-gradient(304.73deg, #FF416F 0%, rgba(0, 114, 215, 0) 98.48%), #35C8CB;*/
+    background: transparent url('../img/verifier/v-card-bg.svg') center center no-repeat;
+    background-size: cover;
 }
 .verifier-card--inactive .verifier-card__top{
     background: -webkit-gradient(linear, left bottom, left top, from(#EBF0FF), to(#EBF0FF)), #00E7F7;
