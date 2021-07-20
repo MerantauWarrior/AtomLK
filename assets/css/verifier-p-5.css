@@ -1,0 +1,36 @@
+.container--verifier{
+    max-width: 870px;
+}
+.verifier-p-5-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.verifier-p-5-item__content{
+    margin-left: 18px;
+}
+.verifier-p-5-item__btns{
+    display: flex;
+    margin-left: auto;
+}
+.verifier-p-5-item__btns .btn{
+    margin-left: 17px;
+}
+.verifier-p-5-item__title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 3px;
+}
+.verifier-p-5-item__text{
+    font-size: 16px;
+    line-height: 26px;
+}
+.verifier-p-5-item__text span{
+    font-weight: 700;
+    color: #1062AA;
+}
+
+@media all and (max-width: 767px){
+
+}
