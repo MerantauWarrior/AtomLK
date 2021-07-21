@@ -40,6 +40,9 @@
     background: -o-linear-gradient(bottom, #EBF0FF, #EBF0FF), #00E7F7;
     background: linear-gradient(0deg, #EBF0FF, #EBF0FF), #00E7F7;
 }
+.verifier-card__top-l{
+    margin-top: auto;
+}
 .verifier-card__label{
     display: inline-flex;
     align-items: center;

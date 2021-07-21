@@ -201,8 +201,9 @@ ol{
     border: 1px solid #81859C;
 }
 .btn-empty-gray:hover{
-    background-color: #81859C;
-    color: #ffffff;
+    color: #81859C;
+    border: 1px solid #81859C;
+    cursor: default;
 }
 .btn-empty-red{
     color: #333333;
